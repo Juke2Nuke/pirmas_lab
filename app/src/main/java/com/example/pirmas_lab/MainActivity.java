@@ -24,4 +24,10 @@ public class MainActivity extends AppCompatActivity {
         this.tvMain.setText("Funnie");
         this.button01.setText("HaHa");
     }
+
+    public void btnChangeColours(View view) {
+        java.util.Random r = new java.util.Random();
+        this.tvMain.setTextColor(android.graphics.Color.rgb(r.nextInt(256),r.nextInt(256),r.nextInt(256)));
+        this.button01.setTextColor(android.graphics.Color.rgb(r.nextInt(256),r.nextInt(256),r.nextInt(256)));
+    }
 }
